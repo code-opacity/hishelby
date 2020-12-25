@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!--Opacity frame work css-->
     <link rel="stylesheet" href="https://rehanur.github.io/me/opacity.max.css">
+    <!--End Here-->
 </head>
 <body>
+    <!--====
+        Name: Hishelby
+        Author: Codeopacity
+        Other Works:https://youtube.com/channel/UCta9ef6GFQ6V1Vgak9WKlhg?sub_confirmation=1
+        =====-->
     <!--header-->
     <header class="p-f z-nav w100">
         <div class="container">
@@ -21,7 +28,7 @@
                     <li><a href="#" class="tc">about</a></li>
                     </ul>
                </div>
-                <a href="#" class="user">Dorime Ameno</a>
+                <a href="#" class="user">User Ameno</a>
                 <div class="mnav"><i class="fa fa-navicon"></i></div>
             </nav>
             
@@ -192,10 +199,10 @@
                     <img src="https://webuildthemes.com/go/assets/images/demo/logo/logo-dark.svg" alt="" class="max">
                 </div>
                 <div class="item jsfe">
-                    <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <a href="www.facebook.come/alpha.code.0" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://youtube.com/channel/UCta9ef6GFQ6V1Vgak9WKlhg?sub_confirmation=1" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://youtube.com/channel/UCta9ef6GFQ6V1Vgak9WKlhg?sub_confirmation=1" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://youtube.com/channel/UCta9ef6GFQ6V1Vgak9WKlhg?sub_confirmation=1" target="_blank"><i class="fa fa-youtube"></i></a>
                 </div>
             </div>
         </footer>
@@ -217,6 +224,25 @@
                 window.onscroll = () => {
                     this.scrollY > 20 ? header.classList.add("sticky") : header.classList.remove("sticky")
                 }
+            //skew 
+
+            const section = document.querySelector('body');
+
+                let currentPos = window.pageYOffset;
+
+                const update = () => {
+                    const newPos = window.pageYOffset;
+                    const diff = newPos - currentPos;
+                    const speed = diff * 0.15;
+
+                    section.style.transform = `skewY(${speed}deg)`;
+
+                    currentPos = newPos;
+
+                    requestAnimationFrame(update);
+                }
+
+                update();
         </script>
 </body>
 </html>

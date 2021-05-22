@@ -189,6 +189,7 @@ main h1{
 #education .card{
     box-shadow: 0 6px 24px rgba(0,0,0,.3);
     transition:all .3s ease;
+    padding: 2rem;
 }
 
 #education .card:hover{
